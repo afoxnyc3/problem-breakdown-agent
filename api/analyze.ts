@@ -3,7 +3,7 @@
  */
 
 import OpenAI from 'openai';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 dotenv.config();
@@ -112,13 +112,3 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 }
 
-// Local testing
-if (import.meta.url === `file://${process.argv[1]}`) {
-  const testProblem = "Build a machine learning model for customer churn prediction";
-  analyzeProblem(testProblem)
-    .then(result => {
-      console.log('Steps:', result.steps);
-      console.log('\nMermaid:\n', generateMermaid(result.steps));
-    })
-    .catch(console.error);
-}

@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch dev-server.ts",
-    "build": "tsc index.ts --outDir dist",
+    "build": "echo 'No build needed for Vercel'",
     "start": "tsx index.ts",
     "vercel-dev": "vercel dev",
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest",

@@ -3,7 +3,7 @@
  */
 
 import OpenAI from 'openai';
-import dotenv from 'dotenv';
+import * as dotenv from 'dotenv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 dotenv.config();
