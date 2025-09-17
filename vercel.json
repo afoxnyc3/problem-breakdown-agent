@@ -1,13 +1,7 @@
 {
   "functions": {
-    "index.ts": {
+    "api/analyze.ts": {
       "maxDuration": 30
     }
-  },
-  "rewrites": [
-    {
-      "source": "/api/analyze",
-      "destination": "/index"
-    }
-  ]
+  }
 }
