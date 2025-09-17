@@ -72,6 +72,26 @@ Each decision should follow this format:
 
 ---
 
+### 2024-09-16: Add Web UI for End Users
+
+**Context**: API-only interface is not user-friendly for non-technical users.
+
+**Options Considered**:
+1. Keep API-only approach
+2. Build complex React/Next.js app
+3. Create simple standalone HTML interface
+
+**Decision Made**: Simple standalone HTML file (public/app.html) that connects to API.
+
+**Consequences**:
+- User-friendly interface for non-technical users
+- No build process needed
+- Can be hosted anywhere (static hosting)
+- Maintains separation between API and UI
+- Easy to customize or replace
+
+---
+
 ### 2024-09-16: Simplify Project Structure to Single File
 
 **Context**: Initial implementation was overengineered with multiple directories and files for a simple API.

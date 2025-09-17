@@ -15,6 +15,14 @@ Each change entry should include:
 
 ## Changes
 
+### 2024-09-16 21:40 | Feature | Web UI
+**Description**: Added user-friendly web interface for the API
+**Files Modified**:
+- Added: `public/app.html` - Standalone web interface
+- Removed: `index.html` - Moved to public directory
+- Modified: `decision-log.md` - Documented UI decision
+- Modified: `change-log.md` - Logged this change
+
 ### 2024-09-16 20:40 | Refactor | Simplified Structure
 **Description**: Consolidated entire project into single file implementation
 **Files Modified**:
